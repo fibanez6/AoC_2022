@@ -1,0 +1,17 @@
+= Advent of code 2022
+
+Python solutions of link:https://adventofcode.com/2022[Advent of Code 2022]
+
+== Requirements
+
+The solutions were developed and tested using Python 3.9 and python modules declared in link:./requirement.txt[requirements.txt].
+
+== Solutions
+
+[%header, cols="1,2,1,1"]
+|===
+| Day | Challenge | Part 1 | Part 2
+
+| 01 | link:https://adventofcode.com/2022/day/1[Calorie Counting] | link:./day-01/solution.py[part 1] | link:./day-01/solution.py[part 2]
+
+|===
