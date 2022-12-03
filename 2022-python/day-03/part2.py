@@ -2,24 +2,24 @@
 
 # Lowercase item types a through z have priorities 1 through 26.
 # Uppercase item types A through Z have priorities 27 through 52.
-def priority(char):
-    if char.isupper():
-        return ord(char) - ord('A') + 27
+def priority(item):
+    if item.isupper():
+        return ord(item) - 96
     else:
-        return ord(char) - ord('a') + 1
+        return ord(item) - 38
 
 
 data = open("input", "r", encoding='utf-8')
 
-sumOfPriorities = 0
+sumOf_item_priorities = 0
 for rucksack in data:
     elf1 = [*rucksack.strip()]
     elf2 = [*next(data).strip()]
     elf3 = [*next(data).strip()]
 
     # Finding the one item type that is common between all three Elves in each group.
-    commonItem = set(elf1).intersection(elf2).intersection(elf3).pop()
-    sumOfPriorities += priority(commonItem)
+    common_item = set(elf1).intersection(elf2).intersection(elf3).pop()
+    sumOf_item_priorities += priority(common_item)
 
-print("sumOfPriorities: ", sumOfPriorities)
+print("Sum of priorities = ", sumOf_item_priorities)
 # 2510
