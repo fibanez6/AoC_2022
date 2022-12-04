@@ -12,8 +12,9 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 |===
 | Day | Challenge | Part 1 | Part 2
 
-| 01 | link:https://adventofcode.com/2022/day/1[Calorie Counting] | link:./day-01/solution.py[part 1] | link:./day-01/solution.py[part 2]
+| 01 | link:https://adventofcode.com/2022/day/1[Calorie Counting] | link:./day-01/part1.py[part 1] | link:./day-01/part2.py[part 2]
 | 02 | link:https://adventofcode.com/2022/day/2[Rock Paper Scissors] | link:./day-02/part1.py[part 1] | link:./day-02/part2.py[part 2]
 | 03 | link:https://adventofcode.com/2022/day/3[Rucksack Reorganization] | link:./day-03/part1.py[part 1] | link:./day-03/part2.py[part 2]
+| 03 | link:https://adventofcode.com/2022/day/4[Camp Cleanup] | link:./day-04/part1.py[part 1] | link:./day-04/part2.py[part 2]
 
 |===
