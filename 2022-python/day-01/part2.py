@@ -10,11 +10,6 @@ with open('input', 'r', encoding='utf-8') as file:
         else:
             acc_calories += int(line)
 
-#  PART 1
-top_elf = max(sumOf_elf_calories)
-print('top elf = ', top_elf)
-#  71780
-
 #  PART 2
 sumOf_elf_calories.sort(reverse=True)
 sumOf_top_three = sum(sumOf_elf_calories[:3])
