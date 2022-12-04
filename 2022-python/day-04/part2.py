@@ -10,16 +10,15 @@ def get_range_sections(section_assignment):
 
 total_overlapping_sections = 0
 for pair in data:
-    # pair ['2-8','3-7']
-    elves = pair.split(',')
+    elf1_sections, elf2_sections = pair.split(',')
+    elf1_sections_from, elf1_sections_to = get_range_sections(elf1_sections)
+    elf2_sections_from, elf2_sections_to = get_range_sections(elf2_sections)
 
-    elf1_sections = get_range_sections(elves[0])
-    elf2_sections = get_range_sections(elves[1])
+    overlapping_sections = max(elf1_sections_from, elf2_sections_from) <= min(elf1_sections_to, elf2_sections_to)
 
-    overlapping_sections = list(
-        range(max(elf1_sections[0], elf2_sections[0]),
-              min(elf1_sections[-1], elf2_sections[-1]) + 1))
-    # print("overlapping_sections = ", overlapping_sections)
+    # overlapping_sections = list(
+    #     range(max(elf1_sections_from, elf2_sections_from),
+    #           min(elf1_sections_to, elf2_sections_to) + 1))
 
     if overlapping_sections:
         total_overlapping_sections += 1

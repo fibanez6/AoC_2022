@@ -7,43 +7,38 @@
 data = open('input', 'r', encoding='utf-8').read().splitlines()
 
 
-def get_sections(section_assignment):
+def get_sections(section_range):
     #  Sample
-    # section_assignment ['2-8']
-    section_range = list(map(int, section_assignment.split('-')))
+    # section_range ['2-8']
+    section_from, section_to = list(map(int, section_range.split('-')))
 
-    # section_range [2,8]
-    sections = list(range(section_range[0], section_range[1] + 1))
+    # section_from = 2, section_to = 8
+    sections = list(range(section_from, section_to + 1))
 
     # sections [2,3,4,5,6,7,8]
     return sections
-
-
-def is_sublist(list1, list2):
-    return set(list1) <= set(list2)
 
 
 total_fully_contained = 0
 total_overlapping_sections = 0
 for pair in data:
     # pair ['2-8','3-7']
-    elves = pair.split(',')
+    elf1, elf2 = pair.split(',')
 
-    elf1_sections = get_sections(elves[0])
-    elf2_sections = get_sections(elves[1])
+    elf1_sections = set(get_sections(elf1))
+    elf2_sections = set(get_sections(elf2))
 
-    is_fully_contained = is_sublist(elf1_sections, elf2_sections) or is_sublist(elf2_sections, elf1_sections)
-    if is_fully_contained:
-        total_fully_contained += 1
+    # total_fully_contained += 1 if elf1_sections <= elf2_sections or elf2_sections <= elf1_sections else 0
+    total_fully_contained += 1 if elf1_sections.issubset(elf2_sections) or \
+                                  elf1_sections.issuperset(elf2_sections) else 0
 
-    overlapping_sections = set(elf1_sections).intersection(elf2_sections)
-    if overlapping_sections:
-        total_overlapping_sections += 1
+    # total_overlapping_sections += 1 if elf1_sections.intersection(elf2_sections) else 0
+    total_overlapping_sections += 1 if elf1_sections & elf2_sections else 0
 
 # PART 1
 print("Total of sections fully contained = ", total_fully_contained)
-#  487
+# 487
 
 # PART 2
 print("Total of overlapping sections = ", total_overlapping_sections)
-#  849
+# 849

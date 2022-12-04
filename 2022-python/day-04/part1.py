@@ -10,14 +10,12 @@ def get_range_sections(section_assignment):
 
 total_fully_contained = 0
 for pair in data:
-    # pair ['2-8','3-7']
-    elves = pair.split(',')
+    elf1_sections, elf2_sections = pair.split(',')
+    elf1_sections_from, elf1_sections_to = get_range_sections(elf1_sections)
+    elf2_sections_from, elf2_sections_to = get_range_sections(elf2_sections)
 
-    elf1_sections = get_range_sections(elves[0])
-    elf2_sections = get_range_sections(elves[1])
-
-    if (elf1_sections[0] <= elf2_sections[0] and elf1_sections[1] >= elf2_sections[1]) or (
-            elf1_sections[0] >= elf2_sections[0] and elf1_sections[1] <= elf2_sections[1]):
+    if (elf1_sections_from <= elf2_sections_from and elf1_sections_to >= elf2_sections_to) or (
+            elf1_sections_from >= elf2_sections_from and elf1_sections_to <= elf2_sections_to):
         total_fully_contained += 1
 
 print("Total of sections fully contained = ", total_fully_contained)
