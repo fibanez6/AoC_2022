@@ -1,5 +1,9 @@
 # --- Day 2: Rock Paper Scissors ---
 
+TEST = {'file': 'input.test'}
+INPUT = {'file': 'input'}
+CTX = INPUT
+
 #  Rock Paper Scissors representation
 # [A, X] for Rock,
 # [B, Y] for Paper,
@@ -25,7 +29,7 @@ game_scores = {'X': {'A': 3, 'B': 0, 'C': 6},
 shape_scores = {'X': 1, 'Y': 2, 'Z': 3}
 
 total_score = 0
-with open('input', 'r', encoding='utf-8') as game:
+with open(CTX['file'], 'r', encoding='utf-8') as game:
     for round in game:
         p0, p1 = round.split()
         total_score += shape_scores.get(p1) + game_scores.get(p1).get(p0)

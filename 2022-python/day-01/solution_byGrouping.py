@@ -2,8 +2,12 @@ from itertools import groupby
 
 # --- Day 1: Calorie Counting ---
 
+TEST = {'file': 'input.test'}
+INPUT = {'file': 'input'}
+CTX = INPUT
+
 # Cast values to integers from strings and -1 from empties
-with open('input', 'r', encoding='utf-8') as file:
+with open(CTX['file'], 'r', encoding='utf-8') as file:
     calories = [-1 if (line == '\n') else int(line) for line in file]
 
 # Group calories per elf by splitting by -1

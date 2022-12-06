@@ -5,9 +5,10 @@ import queue
 DEBUG = False
 TEST = {'file': 'input.test'}
 INPUT = {'file': 'input'}
-DOMAIN = INPUT
+CTX = INPUT
 
-class Datastream():
+
+class Datastream:
 
     def __init__(self, buffer_size):
         self.buffer = queue.Queue(buffer_size)
@@ -71,15 +72,11 @@ def find_marker(data, buffer_size):
 
 
 # PART 1
-buffer_size = 4
-data = open(DOMAIN['file'], 'r', encoding='utf-8')
-marker_pos = find_marker(data, buffer_size)
-print("PART 1 - First start-of-packet marker position:", marker_pos)
+data = open(CTX['file'], 'r', encoding='utf-8')
+print("PART 1 - First start-of-packet marker position:", find_marker(data, 4))
 # 1531
 
 # PART 2
-buffer_size = 14
-data = open(DOMAIN['file'], 'r', encoding='utf-8')
-marker_pos = find_marker(data, buffer_size)
-print("PART 2 - First start-of-packet marker position:", marker_pos)
+data = open(CTX['file'], 'r', encoding='utf-8')
+print("PART 2 - First start-of-packet marker position:", find_marker(data, 14))
 # 2518

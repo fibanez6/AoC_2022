@@ -5,7 +5,7 @@ import queue
 DEBUG = False
 TEST = {'file': 'input.test'}
 INPUT = {'file': 'input'}
-DOMAIN = INPUT
+CTX = INPUT
 
 
 def find_marker(data, buffer_size):
@@ -37,13 +37,11 @@ def find_marker(data, buffer_size):
 
 
 # PART 1
-data = open(DOMAIN['file'], 'r', encoding='utf-8')
-marker_pos = find_marker(data, 4)
-print("PART 1 - First start-of-packet marker position:", marker_pos)
+data = open(CTX['file'], 'r', encoding='utf-8')
+print("PART 1 - First start-of-packet marker position:", find_marker(data, 4))
 # 1531
 
 # PART 2
-data = open(DOMAIN['file'], 'r', encoding='utf-8')
-marker_pos = find_marker(data, 14)
-print("PART 2 - First start-of-packet marker position:", marker_pos)
+data = open(CTX['file'], 'r', encoding='utf-8')
+print("PART 2 - First start-of-packet marker position:", find_marker(data, 14))
 # 2518

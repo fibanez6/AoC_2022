@@ -5,7 +5,7 @@ import re
 DEBUG = False
 TEST = {'file': 'input.test', 'num_stacks': 3, 'max_cranes': 3}
 INPUT = {'file': 'input', 'num_stacks': 9, 'max_cranes': 8}
-DOMAIN = INPUT
+CTX = INPUT
 
 
 def print_cargo(cargo):
@@ -14,6 +14,13 @@ def print_cargo(cargo):
         for stack in cargo:
             print(stack)
         print("")
+
+
+def read_file():
+    data = open(CTX['file'], 'r', encoding='utf-8').read().splitlines()
+    cargo = read_cargo(data, CTX['num_stacks'], CTX['max_cranes'])
+    moves = read_moves(data, CTX['max_cranes'] + 2)
+    return cargo, moves
 
 
 def read_cargo(data, num_stacks, max_cranes):
@@ -35,7 +42,7 @@ def read_moves(data, cargo_size):
         yield list(map(int, re.findall(r'\b\d+\b', move)))
 
 
-def execute_moves(cargo, moves):
+def crateMover_9000(cargo, moves):
     print_cargo(cargo)
     for count, stack_from, stack_to in moves:
         for _ in range(count):
@@ -45,13 +52,33 @@ def execute_moves(cargo, moves):
             print_cargo(cargo)
 
 
-data = open(DOMAIN['file'], 'r', encoding='utf-8').read().splitlines()
+def crateMover_9001(cargo, moves):
+    print_cargo(cargo)
+    for count, stack_from, stack_to in moves:
+        for i in reversed(range(count)):
+            if DEBUG: print("move", cargo[stack_from - 1][i], "from", stack_from, "to", stack_to)
+            cargo[stack_to - 1].insert(0, cargo[stack_from - 1].pop(i))
+        print_cargo(cargo)
 
-cargo = read_cargo(data, DOMAIN['num_stacks'], DOMAIN['max_cranes'])
-moves = read_moves(data, DOMAIN['max_cranes'] + 2)
 
-execute_moves(cargo, moves)
-top_each_stack = [stack[0] for stack in cargo]
+def part_1():
+    cargo, moves = read_file()
+    crateMover_9000(cargo, moves)
+    top_each_stack = [stack[0] for stack in cargo]
+    return ''.join(top_each_stack)
 
-print("Top of each stack: ", ''.join(top_each_stack))
+
+def part_2():
+    cargo, moves = read_file()
+    crateMover_9001(cargo, moves)
+    top_each_stack = [stack[0] for stack in cargo]
+    return ''.join(top_each_stack)
+
+
+# PART 1
+print("PART 1 - Top of each stack: ", part_1())
 # SBPQRSCDF
+
+# PART 2
+print("PART 2 - Top of each stack: ", part_2())
+# RGLVRCQSB

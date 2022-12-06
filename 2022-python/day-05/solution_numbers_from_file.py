@@ -1,6 +1,6 @@
 #  --- Day 5: Supply Stacks ---
 
-# Load cargo data without knowing the number of cranes or stacks
+# Load cargo data by figure out how many stacks and cranes there are
 # NOTE: Your IDE may trim trailing whitespace in the data
 
 import re
@@ -8,7 +8,7 @@ import re
 DEBUG = False
 TEST = {'file': 'input.test'}
 INPUT = {'file': 'input'}
-DOMAIN = INPUT
+CTX = INPUT
 
 
 def print_cargo(cargo):
@@ -17,6 +17,14 @@ def print_cargo(cargo):
         for stack in cargo:
             print(stack)
         print("")
+
+
+def read_file():
+    data = open(CTX['file'], 'r', encoding='utf-8').read().splitlines()
+    cargo = read_cargo(data)
+    max_num_cranes = max([len(x) for x in cargo])
+    moves = read_moves(data, max_num_cranes + 2)
+    return cargo, moves
 
 
 def read_cargo(data):
@@ -54,7 +62,7 @@ def read_moves(data, cargo_size):
         yield list(map(int, re.findall(r'\b\d+\b', move)))
 
 
-def execute_move_part_1(cargo, moves):
+def crateMover_9000(cargo, moves):
     print_cargo(cargo)
     for count, stack_from, stack_to in moves:
         for _ in range(count):
@@ -64,7 +72,7 @@ def execute_move_part_1(cargo, moves):
             print_cargo(cargo)
 
 
-def execute_move_part_2(cargo, moves):
+def crateMover_9001(cargo, moves):
     print_cargo(cargo)
     for count, stack_from, stack_to in moves:
         for i in reversed(range(count)):
@@ -73,32 +81,24 @@ def execute_move_part_2(cargo, moves):
         print_cargo(cargo)
 
 
-data = open(DOMAIN['file'], 'r', encoding='utf-8').read().splitlines()
+def part_1():
+    cargo, moves = read_file()
+    crateMover_9000(cargo, moves)
+    top_each_stack = [stack[0] for stack in cargo]
+    return ''.join(top_each_stack)
+
+
+def part_2():
+    cargo, moves = read_file()
+    crateMover_9001(cargo, moves)
+    top_each_stack = [stack[0] for stack in cargo]
+    return ''.join(top_each_stack)
 
 
 # PART 1
-def part_1():
-    cargo = read_cargo(data)
-    max_num_cranes = max([len(x) for x in cargo])
-    moves = read_moves(data, max_num_cranes + 2)
-
-    execute_move_part_1(cargo, moves)
-    top_each_stack = [stack[0] for stack in cargo]
-    print("PART 1 - Top of each stack: ", ''.join(top_each_stack))
-    # SBPQRSCDF
-
+print("PART 1 - Top of each stack: ", part_1())
+# SBPQRSCDF
 
 # PART 2
-def part_2():
-    cargo = read_cargo(data)
-    max_num_cranes = max([len(x) for x in cargo])
-    moves = read_moves(data, max_num_cranes + 2)
-
-    execute_move_part_2(cargo, moves)
-    top_each_stack = [stack[0] for stack in cargo]
-    print("PART 2 - Top of each stack: ", ''.join(top_each_stack))
-    # RGLVRCQSB
-
-
-part_1()
-part_2()
+print("PART 2 - Top of each stack: ", part_2())
+# RGLVRCQSB
