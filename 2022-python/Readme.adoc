@@ -17,5 +17,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 03 | link:https://adventofcode.com/2022/day/3[Rucksack Reorganization] | link:./day-03/part1.py[part 1] | link:./day-03/part2.py[part 2]
 | 04 | link:https://adventofcode.com/2022/day/4[Camp Cleanup] | link:./day-04/part1.py[part 1] | link:./day-04/part2.py[part 2]
 | 05 | link:https://adventofcode.com/2022/day/5[Supply Stacks] | link:./day-05/part1.py[part 1] | link:./day-05/part2.py[part 2]
+| 06 | link:https://adventofcode.com/2022/day/6[Tuning Trouble] | link:./day-06/solution_slices.py[part 1] | link:./day-06/solution_slices.py[part 2]
 
 |===

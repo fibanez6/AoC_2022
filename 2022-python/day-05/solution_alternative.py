@@ -36,7 +36,7 @@ def read_cargo(data):
     if DEBUG: print(cranes_pos)
 
     num_stacks = max([len(x) for x in cranes_pos])
-    cargo = [[] for i in range(num_stacks)]
+    cargo = [[] for _ in range(num_stacks)]
 
     for row in cranes_pos:
         for crane_pos, crane in row:
