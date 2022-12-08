@@ -18,6 +18,7 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 04 | link:https://adventofcode.com/2022/day/4[Camp Cleanup]               | link:./day-04/solution.py[part1 & part2] 
 | 05 | link:https://adventofcode.com/2022/day/5[Supply Stacks]              | link:./day-05/solution_numbers_from_input.py[part1 & part2] 
 | 06 | link:https://adventofcode.com/2022/day/6[Tuning Trouble]             | link:./day-06/solution_slices.py[part1 & part2] 
-| 07 | link:https://adventofcode.com/2022/day/6[No Space Left On Device]    | link:./day-07/solution.py[part1 & part2] 
+| 07 | link:https://adventofcode.com/2022/day/7[No Space Left On Device]    | link:./day-07/solution.py[part1 & part2] 
+| 08 | link:https://adventofcode.com/2022/day/8[Treetop Tree House]         | link:./day-08/solution.py[part1 & part2] 
 
 |===
