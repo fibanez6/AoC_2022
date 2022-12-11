@@ -22,5 +22,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 08 | link:https://adventofcode.com/2022/day/8[Treetop Tree House]         | link:./day-08/solution.py[part1 & part2] 
 | 09 | link:https://adventofcode.com/2022/day/9[Rope Bridge]                | link:./day-09/solution.py[part1 & part2] 
 | 10 | link:https://adventofcode.com/2022/day/10[Cathode-Ray Tube]          | link:./day-10/solution.py[part1 & part2] 
+| 11 | link:https://adventofcode.com/2022/day/11[Monkey in the Middle]      | link:./day-11/solution.py[part1 & part2] 
 
 |===
