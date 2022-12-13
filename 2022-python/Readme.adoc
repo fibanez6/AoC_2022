@@ -24,5 +24,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 10 | link:https://adventofcode.com/2022/day/10[Cathode-Ray Tube]                  | link:./day-10/solution.py[part1 & part2] 
 | 11 | link:https://adventofcode.com/2022/day/11[Monkey in the Middle (LCM)]        | link:./day-11/solution.py[part1 & part2] 
 | 12 | link:https://adventofcode.com/2022/day/12[Hill Climbing Algorithm (BFS)]     | link:./day-12/solution.py[part1 & part2] 
+| 13 | link:https://adventofcode.com/2022/day/13[Distress Signal]                   | link:./day-13/solution.py[part1 & part2] 
 
 |===
