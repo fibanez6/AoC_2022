@@ -25,5 +25,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 11 | link:https://adventofcode.com/2022/day/11[Monkey in the Middle (LCM)]        | link:./day-11/solution.py[part1 & part2] 
 | 12 | link:https://adventofcode.com/2022/day/12[Hill Climbing Algorithm (BFS)]     | link:./day-12/solution.py[part1 & part2] 
 | 13 | link:https://adventofcode.com/2022/day/13[Distress Signal]                   | link:./day-13/solution.py[part1 & part2] 
+| 14 | link:https://adventofcode.com/2022/day/14[Regolith Reservoir (animated)]     | link:./day-14/solution.py[part1 & part2]
 
 |===
