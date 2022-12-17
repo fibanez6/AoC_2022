@@ -27,5 +27,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 13 | link:https://adventofcode.com/2022/day/13[Distress Signal]                                   | link:./day-13/solution.py[part1 & part2] 
 | 14 | link:https://adventofcode.com/2022/day/14[Regolith Reservoir]                                | link:./day-14/solution.py[part1 & part2 (animated)]
 | 15 | link:https://adventofcode.com/2022/day/15[Beacon Exclusion Zone (Manhattan distance)]        | link:./day-15/solution.py[part1 & part2 (Z3)]
+| 16 | link:https://adventofcode.com/2022/day/16[Proboscidea Volcanium (BFS & DFS)]                 | link:./day-16/part1.py[part1] & link:./day-16/part2.py[part2]
 
 |===
