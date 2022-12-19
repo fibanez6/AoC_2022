@@ -3,7 +3,7 @@
 import timeit
 from collections import deque
 
-TEST = {'file': 'input.test2', 'debug': True}
+TEST = {'file': 'input.test', 'debug': True}
 INPUT = {'file': 'input', 'debug': False}
 CTX = INPUT
 DEBUG = CTX['debug']

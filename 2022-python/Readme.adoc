@@ -30,5 +30,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 16 | link:https://adventofcode.com/2022/day/16[Proboscidea Volcanium]                             | link:./day-16/part1.py[part1] & link:./day-16/part2.py[part2]     | BFS & DFS - The traveling salesman problem
 | 17 | link:https://adventofcode.com/2022/day/17[Pyroclastic Flow]                                  | link:./day-17/solution_pointers.py[part1 & part2]                 | Tetris - Cycle detector
 | 18 | link:https://adventofcode.com/2022/day/18[Boiling Boulders]                                  | link:./day-18/solution.py[part1 & part2]                          | Cube (3D Grid) - Surface area - Breadth-First Search (BFS)
+| 19 | link:https://adventofcode.com/2022/day/19[Not Enough Minerals]                               | link:./day-19/solution_recursive.py[part1 & part2]                | DFS with max speed
 
 |===
