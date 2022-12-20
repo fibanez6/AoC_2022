@@ -120,6 +120,8 @@ def part_2():
 
 print(f'Running PART 1')
 part_1()
+# 1981
 
 print(f'Running PART 2')
 part_2()
+# 10962

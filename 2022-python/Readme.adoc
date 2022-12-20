@@ -31,5 +31,6 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 17 | link:https://adventofcode.com/2022/day/17[Pyroclastic Flow]                                  | link:./day-17/solution_pointers.py[part1 & part2]                 | Tetris - Cycle detector
 | 18 | link:https://adventofcode.com/2022/day/18[Boiling Boulders]                                  | link:./day-18/solution.py[part1 & part2]                          | Cube (3D Grid) - Surface area - Breadth-First Search (BFS)
 | 19 | link:https://adventofcode.com/2022/day/19[Not Enough Minerals]                               | link:./day-19/solution_recursive.py[part1 & part2]                | DFS with max speed
+| 20 | link:https://adventofcode.com/2022/day/20[Grove Positioning System]                          | link:./day-20/solution_index.py[part1 & part2]                    | Decrypting - mixing long numbers list
 
 |===
