@@ -4,7 +4,7 @@ Python solutions of link:https://adventofcode.com/2022[Advent of Code 2022]
 
 == Requirements
 
-The solutions were developed and tested using Python 3.9 and python modules declared in link:./requirement.txt[requirements.txt].
+The solutions were developed and tested using Python 3.9 and python modules declared in link:./requirements.txt[requirements.txt].
 
 == Solutions
 
@@ -31,6 +31,7 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 17 | link:https://adventofcode.com/2022/day/17[Pyroclastic Flow]                                  | link:./day-17/solution_pointers.py[part1 & part2]                 | Tetris - Cycle detector
 | 18 | link:https://adventofcode.com/2022/day/18[Boiling Boulders]                                  | link:./day-18/solution.py[part1 & part2]                          | Cube (3D Grid) - Surface area - Breadth-First Search (BFS)
 | 19 | link:https://adventofcode.com/2022/day/19[Not Enough Minerals]                               | link:./day-19/solution_recursive.py[part1 & part2]                | DFS with max speed
-| 20 | link:https://adventofcode.com/2022/day/20[Grove Positioning System]                          | link:./day-20/solution_index.py[part1 & part2]                    | Decrypting - mixing long numbers list
+| 20 | link:https://adventofcode.com/2022/day/20[Grove Positioning System]                          | link:./day-20/solution.py[part1 & part2]                          | Decrypting - mixing long numbers list
+| 21 | link:https://adventofcode.com/2022/day/21[Monkey Math]                                       | link:./day-21/solution.py[part1 & part2]                          | Z3 Library
 
 |===
