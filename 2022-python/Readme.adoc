@@ -31,7 +31,11 @@ The solutions were developed and tested using Python 3.9 and python modules decl
 | 17 | link:https://adventofcode.com/2022/day/17[Pyroclastic Flow]                                  | link:./day-17/solution_pointers.py[part1 & part2]                 | Tetris - Cycle detector
 | 18 | link:https://adventofcode.com/2022/day/18[Boiling Boulders]                                  | link:./day-18/solution.py[part1 & part2]                          | Cube (3D Grid) - Surface area - Breadth-First Search (BFS)
 | 19 | link:https://adventofcode.com/2022/day/19[Not Enough Minerals]                               | link:./day-19/solution_recursive.py[part1 & part2]                | DFS with max speed
-| 20 | link:https://adventofcode.com/2022/day/20[Grove Positioning System]                          | link:./day-20/solution.py[part1 & part2]                          | Decrypting - mixing long numbers list
+| 20 | link:https://adventofcode.com/2022/day/20[Grove Positioning System]                          | link:./day-20/solution_index.py[part1 & part2]                    | Decrypting - mixing long numbers list
 | 21 | link:https://adventofcode.com/2022/day/21[Monkey Math]                                       | link:./day-21/solution.py[part1 & part2]                          | Z3 Library
+| 22 | link:https://adventofcode.com/2022/day/22[Monkey Map]                                        | link:./day-22/part1.py[part1] & link:./day-22/part2.py[part2]     | Cube - Movement on the surface (part 2) 
+| 23 | link:https://adventofcode.com/2022/day/23[Unstable Diffusion]                                | link:./day-23/solution.py[part1 & part2]                          | Particle repulsion problem 
+| 24 | link:https://adventofcode.com/2022/day/24[Blizzard Basin]                                    | link:./day-24/solution.py[part1 & part2]                          | LCM - Cache the positions of blizzards at each point in time
+| 25 | link:https://adventofcode.com/2022/day/25[Full of Hot Air]                                   | link:./day-25/solution_bfs.py[solution]                           | BFS - Decimals <--> SNAFU numbers
 
 |===
