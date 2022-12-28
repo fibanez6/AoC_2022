@@ -44,11 +44,11 @@ with open(CTX['file'], 'r') as f:
 
 # PART 1
 sumOf_directories = sum(list(filter(lambda size: size <= 100000, filesize.values())))
-print("PART 1 - the sum of the directories with a total size of at most 100000 is:", sumOf_directories)
+print(f'PART 1 - The sum of the directories with a total size of at most 100000 is: {sumOf_directories}')
 # 1390824
 
 # PART 2
 space_required = 30000000 - (70000000 - int(list(filesize.values())[0]))
 total_size = min(list(filter(lambda size: size >= space_required, filesize.values())))
-print("PART 2 - the total size of that directories is:", total_size)
+print(f'PART 2 - The total size of that directories is: {total_size}')
 # 7490863

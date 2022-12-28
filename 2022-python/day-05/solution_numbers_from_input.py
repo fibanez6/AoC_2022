@@ -76,9 +76,9 @@ def part_2():
 
 
 # PART 1
-print("PART 1 - Top of each stack: ", part_1())
+print(f'PART 1 - Top of each stack: {part_1()}')
 # SBPQRSCDF
 
 # PART 2
-print("PART 2 - Top of each stack: ", part_2())
+print(f'PART 2 - Top of each stack: {part_2()}')
 # RGLVRCQSB

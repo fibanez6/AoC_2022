@@ -20,13 +20,13 @@ def read_calories():
 
 def part_1(sumOf_elf_calories):
     top_elf = max(sumOf_elf_calories)
-    print('Top elf = ', top_elf)
+    print(f'Top elf = {top_elf}')
 
 
 def part_2(sumOf_elf_calories):
     sumOf_elf_calories.sort(reverse=True)
     sumOf_top_three = sum(sumOf_elf_calories[:3])
-    print('Sum of top three elves = ', sumOf_top_three)
+    print(f'Sum of top three elves = {sumOf_top_three}')
 
 
 sumOf_elf_calories = read_calories()

@@ -23,9 +23,9 @@ def find_marker(datastream, buffer_size):
 data = open(CTX['file'], 'r', encoding='utf-8').readline()
 
 # PART 1
-print("PART 1 - First start-of-packet marker position:", find_marker(data, 4))
+print(f'PART 1 - First start-of-packet marker position: {find_marker(data, 4)}')
 # 1531
 
 # PART 2
-print("PART 2 - First start-of-packet marker position:", find_marker(data, 14))
+print(f'PART 2 - First start-of-packet marker position: {find_marker(data, 14)}')
 # 2518

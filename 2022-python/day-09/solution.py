@@ -86,5 +86,5 @@ print(f'Part 1: {simulate(moves, 2)})')
 # 6332
 
 # PART 2
-# print(f'Part 2: {simulate(moves, 10)}')
+print(f'Part 2: {simulate(moves, 10)}')
 # 2511

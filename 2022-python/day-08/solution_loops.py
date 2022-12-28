@@ -57,8 +57,8 @@ def part_2():
     return max(vs)
 
 
-print("PART 1 - How many trees are visible from outside the grid?", part_1())
+print(f'PART 1 - How many trees are visible from outside the grid?", {part_1()}')
 # 1698
 
-print("PART 2 - What is the highest scenic score possible for any tree?", part_2())
+print(f'PART 2 - What is the highest scenic score possible for any tree?" {part_2()}')
 # 672280

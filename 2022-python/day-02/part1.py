@@ -4,7 +4,7 @@ TEST = {'file': 'input.test'}
 INPUT = {'file': 'input'}
 CTX = INPUT
 
-#  Rock Paper Scissors representation
+# Rock Paper Scissors representation
 # [A, X] for Rock,
 # [B, Y] for Paper,
 # [C, Z] for Scissors
@@ -34,5 +34,5 @@ with open(CTX['file'], 'r', encoding='utf-8') as game:
         p0, p1 = round.split()
         total_score += shape_scores.get(p1) + game_scores.get(p1).get(p0)
 
-print("Total score = ", total_score)
+print(f'Part 1 - Total score = {total_score}')
 # 8933

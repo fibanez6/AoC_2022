@@ -3,7 +3,7 @@
 DEBUG = False
 TEST = {'file': 'input.test'}
 INPUT = {'file': 'input'}
-CTX = TEST
+CTX = INPUT
 
 
 def priority(item):
@@ -48,9 +48,9 @@ def part_2():
 
 
 # PART 1
-print("PART 1 -  Sum of priorities =", part_1())
+print(f'PART 1 - Sum of priorities {part_1()}')
 # 8039
 
 # PART 2
-print("PART 2 -  Sum of priorities =", part_2())
+print(f'PART 2 - Sum of priorities = {part_2()}')
 # 2510

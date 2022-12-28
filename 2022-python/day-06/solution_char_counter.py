@@ -73,10 +73,10 @@ def find_marker(data, buffer_size):
 
 # PART 1
 data = open(CTX['file'], 'r', encoding='utf-8')
-print("PART 1 - First start-of-packet marker position:", find_marker(data, 4))
+print(f'PART 1 - First start-of-packet marker position: {find_marker(data, 4)}')
 # 1531
 
 # PART 2
 data = open(CTX['file'], 'r', encoding='utf-8')
-print("PART 2 - First start-of-packet marker position:", find_marker(data, 14))
+print(f'PART 2 - First start-of-packet marker position: {find_marker(data, 14)}')
 # 2518

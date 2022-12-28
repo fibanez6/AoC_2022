@@ -44,9 +44,9 @@ data = open(CTX['file'], 'r', encoding='utf-8').read().splitlines()
 total_fully_contained, total_overlapping_sections = run(data)
 
 # PART 1
-print("PART 1 - Total of sections fully contained =", total_fully_contained)
+print(f'PART 1 - Total of sections fully contained = {total_fully_contained}')
 # 487
 
 # PART 2
-print("PART 2 - Total of overlapping sections = ", total_overlapping_sections)
+print(f'PART 2 - Total of overlapping sections =  {total_overlapping_sections}')
 # 849
